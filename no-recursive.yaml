@@ -1,0 +1,28 @@
+modules:
+    module_a:
+        depends:
+        - module_b
+        - module_c
+        val: 5
+    module_b:
+        val: 7
+    module_c:
+        val: 9
+        depends:
+        - module_d
+        - module_e
+    module_d:
+        val: 19
+    module_e:
+        val: 20
+    module_f:
+        depends:
+        - module_e
+        - module_n
+        val: 45
+    module_q:
+        depends:
+        - module_f
+        val: 23
+    module_n:
+        val: 56
